@@ -6,12 +6,12 @@
               as the first entry and export the buildfile again. --><project basedir="." default="build" name="RSEG126_Assignment6">
     <property environment="env"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="17"/>
-    <property name="source" value="17"/>
+    <property name="target" value="11"/>
+    <property name="source" value="11"/>
     <path id="RSEG126_Assignment6.classpath">
         <pathelement location="bin"/>
     </path>
-    <path id="run.Sieve.classpath">
+    <path id="run.Sieve (1).classpath">
         <path refid="RSEG126_Assignment6.classpath"/>
     </path>
     <target name="init">
@@ -50,9 +50,10 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="Sieve">
+    <target name="test">
         <java classname="Sieve.Sieve" failonerror="true" fork="yes">
-            <classpath refid="run.Sieve.classpath"/>
+            <classpath refid="run.Sieve (1).classpath"/>
+        	<arg value="17"/>
         </java>
     </target>
 </project>

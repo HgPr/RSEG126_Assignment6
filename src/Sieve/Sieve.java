@@ -6,16 +6,35 @@ public class Sieve {
 
 	public static void main(String[] args) {
 		
-		// Get number to check
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter an integer to check: ");
-		int n = scanner.nextInt();
-		scanner.close();
-		
-		// Get sieve results
-		System.out.println("Prime numbers less than or equal to " + n + ":");
-		Sieve sieve = new Sieve();
-		sieve.getSieve(n);
+		if (args.length == 0) {
+			
+			// Get number to check
+			Scanner scanner = new Scanner(System.in);
+			System.out.print("Enter an integer to check: ");
+			int n = scanner.nextInt();
+			scanner.close();
+			
+			// Get sieve results
+			System.out.println("Prime numbers less than or equal to " + n + ":");
+			Sieve sieve = new Sieve();
+			sieve.getSieve(n);
+			
+		} else {
+			
+			try {
+				
+				int a = Integer.parseInt(args[0]);
+				System.out.println("Value provided: " + a);
+				System.out.println("Prime numbers less than or equal to " + a + ":");
+				Sieve sieve = new Sieve();
+				sieve.getSieve(a);
+				
+				
+			} catch(Exception e) {
+				
+				System.out.println(e);
+			}
+		}
 	}
 
 	protected void getSieve(int n) {

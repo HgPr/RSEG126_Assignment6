@@ -11,7 +11,7 @@
     <path id="RSEG126_Assignment6.classpath">
         <pathelement location="bin"/>
     </path>
-    <path id="run.Sieve (1).classpath">
+    <path id="run.Sieve.classpath">
         <path refid="RSEG126_Assignment6.classpath"/>
     </path>
     <target name="init">

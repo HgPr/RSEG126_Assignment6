@@ -50,10 +50,16 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="test">
+    <target name="test-good">
         <java classname="Sieve.Sieve" failonerror="true" fork="yes">
             <classpath refid="run.Sieve (1).classpath"/>
         	<arg value="17"/>
         </java>
     </target>
+	<target name="test-bad">
+		<java classname="Sieve.Sieve" failonerror="true" fork="yes">
+			<classpath refid="run.Sieve (1).classpath"/>
+			<arg value="umbrella"/>
+		</java>
+	</target>
 </project>

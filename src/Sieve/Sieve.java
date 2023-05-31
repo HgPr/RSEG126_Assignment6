@@ -21,10 +21,11 @@ public class Sieve {
 			
 		} else {
 			
+			System.out.println("Value provided: " + args[0]);
+			
 			try {
 				
 				int a = Integer.parseInt(args[0]);
-				System.out.println("Value provided: " + a);
 				System.out.println("Prime numbers less than or equal to " + a + ":");
 				Sieve sieve = new Sieve();
 				sieve.getSieve(a);
@@ -32,7 +33,7 @@ public class Sieve {
 				
 			} catch(Exception e) {
 				
-				System.out.println(e);
+				System.out.println("Value is not an integer");
 			}
 		}
 	}

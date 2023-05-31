@@ -50,9 +50,9 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="Sieve (1)">
+    <target name="Sieve">
         <java classname="Sieve.Sieve" failonerror="true" fork="yes">
-            <classpath refid="run.Sieve (1).classpath"/>
+            <classpath refid="run.Sieve.classpath"/>
         </java>
     </target>
 </project>

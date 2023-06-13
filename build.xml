@@ -62,4 +62,11 @@
 			<arg value="umbrella"/>
 		</java>
 	</target>
+    <target name="jar">
+    	<jar destfile="bin/Sieve.jar" basedir="bin">
+    		<manifest>
+    			<attribute name="Main-Class" value="Sieve.Sieve"/>
+    		</manifest>
+    	</jar>
+    </target>
 </project>

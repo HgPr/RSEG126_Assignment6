@@ -62,9 +62,11 @@ public class Sieve {
             
         	if(prime[i] == true) {
             	
-                System.out.print(i + " ");
-            }
+                	System.out.print(i + " ");
+        	}
         }
+		
+	System.out.println();
         
         // Java Program for Sieve of Eratosthenes. (2021). GeeksforGeeks. 
         //    https://www.geeksforgeeks.org/java-program-for-sieve-of-eratosthenes/#
